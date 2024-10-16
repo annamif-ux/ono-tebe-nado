@@ -26,11 +26,12 @@ blockquote {
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
   justify-items: flex-end;
-  padding: 92px 50px;
+  padding: 92px 24px 92px 50px;
 }
 
 .header__links-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   list-style: circle;
   font-size: 18px;
@@ -71,5 +72,31 @@ blockquote {
 .p {
   letter-spacing: 0%;
 }
+
+.cover {
+  position: relative;
+  padding: 165px 50px 50px;
+  background-image: url (../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1100px;
+  height: 757px;
+
+  .overlay {
+    inset: 0;
+    position: absolute;
+    opacity: 60%;
+    background-color: #000000;
+    z-index: 0;
+  }
+
+
+
+
+
+
+}
+
 
 
