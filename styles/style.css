@@ -27,7 +27,7 @@ blockquote {
   grid-template-columns: 1fr 136px 1fr;
   align-items: center;
   justify-items: center;
-  padding: 92px 50px;
+  margin: 92px 50px 96px 50px;
 }
 
 .header__links-list {
