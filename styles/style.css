@@ -1,11 +1,7 @@
 body{
-  margin: 0;
-  padding: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
   background-color: #ffffff;
   color:#000000;
-  max-width: 1100px;
 }
 
 h1,
@@ -26,7 +22,6 @@ blockquote {
   display: grid;
   grid-template-columns: 1fr 136px 1fr;
   align-items: center;
-  justify-items: center;
   margin: 92px 50px 96px 50px;
 }
 
@@ -34,19 +29,19 @@ blockquote {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 34px;
   list-style: circle;
   font-size: 18px;
   line-height: 21.13px;
-  letter-spacing: 1%;
+  letter-spacing: 0.01em;
   text-underline-position: under;
   width: 100%;
 }
 
-  
+
 .header__links-list-item_no-bullit {
   list-style: none;
-  letter-spacing: 0%;
+  letter-spacing: 0px;
 }
 
 .header__logo {
@@ -59,13 +54,14 @@ blockquote {
 .address {
   display: flex;
   flex-direction: column;
-  max-width: 240px;
+  max-width: 237px;
+  width: 100%;
   text-underline-offset: 4px;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
-  letter-spacing: 1%;
-  margin-left: 186px;
+  letter-spacing: 0.01em;
+  justify-self: flex-end;
 }
 
 .header__address {
@@ -78,7 +74,7 @@ blockquote {
 
 .main {
   display: flex;
-  padding: 96px 50px 96px 50px;
+  padding: 96px 50px;
 }
 
 .cover {
@@ -89,6 +85,7 @@ blockquote {
   background-size: cover;
   background-repeat: no-repeat;
   width: 1100px;
+  min-height: 757px;
 }
 
 .overlay {
@@ -97,6 +94,7 @@ blockquote {
   opacity: 60%;
   background-color: #000000;
   z-index: 0;
+
 }
 
 .cover__title {
@@ -104,6 +102,7 @@ blockquote {
   flex-direction: column;
   gap: 20px;
   z-index: 1;
+  position: relative;
   color: white;
   font-size: 100px;
   font-weight: 800;
@@ -115,7 +114,6 @@ blockquote {
 .aligned-text {
   text-align: left;
   line-height: 115%;
-
 }
 
 .aligned-text_center{
@@ -130,20 +128,39 @@ blockquote {
   letter-spacing: 0.6em;
 }
 
-.no-letter-spacing {
-  letter-spacing: 0.3em;
-}
-
 .cover__description {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  box-sizing: border-box;
   gap: 78px;
+  z-index: 1;
+  position: relative;
+  margin-top: 134px;
+  gap: 80px;
+}
 
+.cover__description-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
 
-
-
-
+.bet-button {
+  z-index: 1;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 32px;
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
 
 }
+
+
 
