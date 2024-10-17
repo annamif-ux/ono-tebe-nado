@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  padding: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
   background-color: #ffffff;
@@ -23,10 +24,10 @@ blockquote {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 130px 1fr;
+  grid-template-columns: 1fr 136px 1fr;
   align-items: center;
   justify-items: center;
-  padding: 92px 50px 96px 50px;
+  margin: 92px 50px 96px 50px;
 }
 
 .header__links-list {
@@ -39,6 +40,7 @@ blockquote {
   letter-spacing: 1%;
   text-underline-position: under;
   width: 100%;
+  padding: 0;
 }
   
 .header__links-list-item_no-bullit {
@@ -49,7 +51,8 @@ blockquote {
 .header__logo {
   display: flex-box;
   justify-content: center;
-  max-width: 131px;  
+  max-width: 136px;
+
 }
 
 .address {
@@ -103,7 +106,7 @@ blockquote {
   color: white;
   font-size: 100px;
   font-weight: 800;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -123,9 +126,23 @@ blockquote {
 }
 
 .letter-spacing-extended{
-  letter-spacing: 60%;
+  letter-spacing: 0.6em;
 }
 
+.no-letter-spacing {
+  letter-spacing: 0.3em;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 78px;
 
 
+
+
+
+
+}
 
