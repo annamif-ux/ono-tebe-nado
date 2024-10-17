@@ -27,11 +27,12 @@ blockquote {
   grid-template-columns: 1fr 136px 1fr;
   align-items: center;
   justify-items: center;
-  margin: 92px 50px 96px 50px;
+  padding: 92px 50px;
 }
 
 .header__links-list {
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 32px;
   list-style: circle;
@@ -40,8 +41,8 @@ blockquote {
   letter-spacing: 1%;
   text-underline-position: under;
   width: 100%;
-  padding: 0;
 }
+
   
 .header__links-list-item_no-bullit {
   list-style: none;
