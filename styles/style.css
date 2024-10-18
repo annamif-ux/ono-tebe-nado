@@ -180,19 +180,19 @@ blockquote {
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
   list-style: none;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   gap: 25px;
-
+  height: 563px;
 }
 
 .lots__card-list-item {
+  display: flex;
   flex-grow: 1;
   flex-basis: 334px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
-  height: 563px;
 }
 
 .card-link {
@@ -206,6 +206,7 @@ blockquote {
   flex-direction: column;
   justify-content: space-between;
   padding: 51px 40px 48px 40px;
+  height: 100%;
 }
 
 .card__title {
