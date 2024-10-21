@@ -77,6 +77,7 @@ blockquote {
 
 .overlay {
   position: absolute;
+  inset: 0;
   z-index: 1;
   opacity: 60%;
   background-color: #000000;
@@ -132,7 +133,7 @@ blockquote {
   align-items: center;
   box-sizing: border-box;
   gap: 78px;
-  z-index: 1;
+  z-index: 2;
   position: relative;
   margin-top: 134px;
   gap: 80px;
@@ -201,6 +202,8 @@ blockquote {
 }
 
 .card {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
