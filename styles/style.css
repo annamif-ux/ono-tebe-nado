@@ -15,14 +15,13 @@ ul,
 ol,
 blockquote {
   margin: 0;
-  padding: 0;
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr 136px 1fr;
   align-items: center;
-  margin: 92px 50px 96px 50px;
+  margin: 92px 50px 96px;
 }
 
 .header__links-list {
@@ -37,7 +36,6 @@ blockquote {
   text-underline-position: under;
   width: 100%;
 }
-
 
 .header__links-list-item_no-bullit {
   list-style: none;
@@ -86,7 +84,7 @@ blockquote {
 
 .cover {
   position: relative;
-  z-index: 0;
+  z-index: -1;
   padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-position: center;
@@ -101,14 +99,13 @@ blockquote {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  z-index: 2;
   position: relative;
-  z-index: 1;
-  position: relative;
-  color: white;
   font-size: 100px;
   font-weight: 800;
   letter-spacing: 0.3em;
   line-height: 100%;
+  color:#ffffff;
   text-transform: uppercase;
 }
 
