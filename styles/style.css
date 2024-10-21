@@ -132,7 +132,6 @@ blockquote {
   justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
-  gap: 78px;
   z-index: 2;
   position: relative;
   margin-top: 134px;
@@ -187,7 +186,7 @@ blockquote {
 .lots__card-list-item {
   display: flex;
   flex-grow: 1;
-  flex-basis: 334px;
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
