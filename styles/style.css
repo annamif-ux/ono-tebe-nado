@@ -68,7 +68,7 @@ blockquote {
   list-style: none;
 }
 
-.p {
+.header__address-link-adress {
   letter-spacing: 0%;
 }
 
@@ -77,8 +77,16 @@ blockquote {
   padding: 96px 50px;
 }
 
+.overlay {
+  position: absolute;
+  z-index: 0;
+  opacity: 60%;
+  background-color: #000000;
+}
+
 .cover {
   position: relative;
+  z-index: -1;
   padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-position: center;
@@ -86,21 +94,15 @@ blockquote {
   background-repeat: no-repeat;
   width: 1100px;
   min-height: 757px;
-}
-
-.overlay {
-  inset: 0;
-  position: absolute;
-  opacity: 60%;
-  background-color: #000000;
-  z-index: 0;
-
+ 
 }
 
 .cover__title {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
+  position: relative;
   z-index: 1;
   position: relative;
   color: white;
@@ -150,6 +152,7 @@ blockquote {
 }
 
 .bet-button {
+  position: relative;
   z-index: 1;
   background-color: transparent;
   color: #ffffff;
@@ -215,7 +218,8 @@ blockquote {
   line-height: 120%;
   text-decoration-line: underline;
   color: #ffffff;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  list-style: none;
 }
 
 .card__text {
@@ -228,36 +232,45 @@ blockquote {
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
+  position: relative;
+  z-index: -1;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
+  position: relative;
+  z-index: -1;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
+  position: relative;
+  z-index: -1;
 }
 
 .lots__look-more-link {
+  box-sizing: border-box;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   margin-left: 40px;
+  text-underline-position: under;
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   list-style: none;
-  gap: 24px;
-  margin: 181px 24px 180px 47px;
+  margin: 181px 24px 180px 24px;
+  column-gap: 24px;
 }
 
 .about__column {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+  justify-items: center;
+  list-style: none;
+  min-width: 334px;
 }
 
 .about__logo {
@@ -272,27 +285,93 @@ blockquote {
 
 .about__logo-image {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
   width: 148px;
   height: 114px;
   }
 
+.about__content {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+  
 .about__title {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   color:#000000;
-  margin-bottom: 100px;
+  padding-top: 102px;
+  padding-bottom: 76px;
 }
 
 .about__text {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  align-items: start;
+  margin: 180px 50px 88px 50px;
+  
+}
+
+.footer__address {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  max-width: 237px;
+  width: 100%;
+  text-underline-offset: 4px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  letter-spacing: 0.01em;
+  justify-self: flex-start;
+}
+
+.footer__menu {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  list-style: none;
+}
+
+.footer__menu-list-item {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__menu-link_active {
+  text-underline-position: under;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 240px;
+  gap: 48px;
+
+}
+
+
+
+
 
 
 }
+
 
