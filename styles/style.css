@@ -7,20 +7,24 @@
 
 .header__links-list {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 34px;
-  list-style: circle;
+  width: 100%;
   font-size: 18px;
   line-height: 21.13px;
   letter-spacing: 0.01em;
   text-underline-position: under;
-  width: 100%;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none;
   letter-spacing: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header__link_active {
   text-decoration: none;
 }
 
@@ -33,17 +37,17 @@
 .address {
   display: flex;
   flex-direction: column;
-  max-width: 237px;
+  justify-self: flex-end;
   width: 100%;
+  max-width: 237px;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
-  justify-self: flex-end;
+  text-underline-position: under;
 }
 
 .address-link {
   letter-spacing: 0.01em;
-  text-underline-position: under;
 }
 
 .address__text {
@@ -60,33 +64,33 @@
 .cover {
   position: relative;
   z-index: -1;
-  padding: 165px 50px 50px;
-  background-image: url(../images/cover.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   min-height: 757px;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .cover__title {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  z-index: 2;
-  position: relative;
-  font-size: 100px;
-  font-weight: 800;
-  letter-spacing: 0.3em;
-  line-height: 100%;
   color: #ffffff;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
 .aligned-text {
-  text-align: left;
   line-height: 115%;
+  text-align: left;
 }
 
 .aligned-text_center {
@@ -106,21 +110,21 @@
 }
 
 .cover__description {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
-  z-index: 2;
-  position: relative;
-  margin-top: 134px;
   gap: 80px;
+  box-sizing: border-box;
+  margin-top: 134px;
 }
 
 .cover__description-text {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18px;
 }
@@ -128,14 +132,14 @@
 .bet-button {
   position: relative;
   z-index: 1;
-  background-color: transparent;
-  color: #ffffff;
   border: 1px solid #ffffff;
   padding: 12px 32px;
-  line-height: 26px;
-  font-size: 22px;
+  color: #ffffff;
   font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
@@ -143,29 +147,29 @@
 }
 
 .lots__heading {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
   margin-top: 179px;
-  margin-left: 40px;
   margin-bottom: 27px;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
-  list-style: none;
-  margin-bottom: 30px;
-  height: 100%;
   gap: 25px;
+  height: 100%;
+  margin-bottom: 30px;
+  list-style: none;
 }
 
 .lots__card-list-item {
   display: flex;
-  background-size: cover;
-  background-position: center;
   min-height: 563px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card-link {
@@ -179,8 +183,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 51px 40px 48px 40px;
   height: 100%;
+  padding: 51px 40px 48px 40px;
   background-repeat: no-repeat;
 }
 
@@ -199,11 +203,11 @@
 .card__title {
   position: relative;
   z-index: 2;
-  font-size: 22px;
+  color: #ffffff;
   font-weight: 700;
+  font-size: 22px;
   line-height: 120%;
   text-decoration-line: underline;
-  color: #ffffff;
   text-transform: uppercase;
   list-style: none;
 }
@@ -211,19 +215,19 @@
 .card__text {
   position: relative;
   z-index: 2;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
   text-decoration: none;
 }
 
 .lots__look-more-link {
   box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   margin-left: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
   text-underline-position: under;
 }
 
@@ -235,21 +239,21 @@
 .about__column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  align-items: start;
   justify-items: center;
-  list-style: none;
+  align-items: start;
+  gap: 24px;
   min-width: 334px;
+  list-style: none;
 }
 
 .about__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
-  border-radius: 50%;
   width: 240px;
   height: 240px;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .about__logo-image {
@@ -259,27 +263,27 @@
 }
 
 .about__content {
-  grid-column: span 2;
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
   justify-content: center;
   gap: 24px;
 }
 
 .about__title {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
   padding-top: 102px;
   padding-bottom: 76px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .about__text {
-  font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  font-size: 20px;
   line-height: 120%;
+  letter-spacing: 0.01em;
 }
 
 .footer {
@@ -300,9 +304,9 @@
 
 .footer__menu-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .footer__menu-list-item {
@@ -311,11 +315,11 @@
 }
 
 .footer__menu-link {
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 21px;
-  list-style: none;
   text-underline-position: under;
+  list-style: none;
 }
 
 .footer__menu-link_active {
@@ -325,7 +329,7 @@
 .footer__social-list {
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  width: 240px;
   gap: 48px;
+  width: 240px;
+  list-style: none;
 }
